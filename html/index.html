@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../components/header.js" type="text/javascript" defer></script>
+    <script src="../components/footer.js " type="text/javascript" defer></script>
+    <link rel="stylesheet" href="../assets/font-awesome/css/all.min.css">
+    <meta name="description" content="Economize seu tempo, conheça a Starly, a solução para sua produtividade no Markting Digital. Abrace ao Marketing Data-Driven">
+    <title>Starly - Marketing e Tecnologia</title>
+</head>
+
+<body>
+    <header-component id="header"></header-component>
+    <main>
+        <section class="section-1"> 
+            <img loading="lazy" srcset="
+            ../assets/home/rocket_background-w640.webp  640w,
+            ../assets/home/rocket_background-w960.webp  960w,
+            ../assets/home/rocket_background-w1920.webp  1920w,
+            " sizes="
+            (max-width: 640px) 100vw,
+            (max-width: 960px) 100vw,
+            100vw
+            " class="section-1__background"
+                alt="ilustração de um foguete indo ao espaço e com intrudução a Starly Marketing">
+
+            <div class="section-1__info-box">
+                <h1>
+                    Marketing Digital Descomplicado
+                </h1>
+
+                <p>A Starly chegou parar revolucionar e facilitar a forma que seu negocio lida com o marketing digital.
+                    Gerencie suas redes com uma maior autonomia e praticidade. Tudo o que você precisa em um único
+                    lugar.</p>
+
+                <button class="btn section-1__btn">Entrar em contato <i class="fas fa-arrow-right"></i></button>
+            </div>
+
+        </section>
+
+        <section class="call-to-action">
+            <div>
+                <img id="phone-1" src="../assets/home/home_phone-1.webp" alt="Um telefone demonstrando a sessão de estatísticas do aplicativo">
+            </div>
+            <div class="call-to-action__info-box">
+                <span >Experimente agora</span>
+                <p>Aproveite nosso plano de teste, por 14 dias. Não exige cartão.</p>
+                <button class="btn"> Teste Grátis</button>
+            </div>
+        </section>
+
+        <section class="section-2">
+            <span class="section-2__presentation-text">
+                Vamos te proporcionar a melhor experiência
+            </span>
+
+            <div class="section-2__starly-features">
+                <div style="background-color:  #9CCC65;" class="feat" data-tilt>
+                    <lottie-player loading="lazy" class="card-lottie" src="https://assets2.lottiefiles.com/packages/lf20_eTM2vQ.json"
+                        background="transparent" speed="1" style="width: 20vw; height: 20vw; " loop autoplay>
+                    </lottie-player>
+                    <p>Tenha estatísticas sobre cada postagem da sua empresa!</p>
+                </div>
+                <div style="background-color: #FF7043;" class="feat" data-tilt>
+                    <lottie-player loading="lazy" class="card-lottie" src="https://assets7.lottiefiles.com/packages/lf20_nmymt2s1.json"
+                        background="transparent" speed="1" style="width: 20vw; height: 20vw;" loop autoplay>
+                    </lottie-player>
+                    <p>Faça suas próprias postagens com o menu de criação da starly.</p>
+                </div>
+                <div style="background-color: #81D4FA;" class="feat" data-tilt>
+                    <lottie-player loading="lazy" class="card-lottie"
+                        src="https://assets3.lottiefiles.com/private_files/lf30_vdqxTM.json" background="transparent"
+                        speed="1" style="width: 20vw; height: 20vw;" loop autoplay>
+                    </lottie-player>
+                    <p>Aprenda mais sobre áreas de marketing e design com nossas dicas.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section-3">
+            <img loading="lazy" srcset="
+            ../assets/home/astronaut_background-w640.webp  640w,
+            ../assets/home/astronaut_background-w960.webp  960w,
+            ../assets/home/astronaut_background-w1920.webp  1920w,
+            " sizes="
+            (max-width: 640px) 100vw,
+            (max-width: 960px) 100vw,
+            100vw
+            " class="section-3__background"
+                alt="Ilustração de um astronauta no espaço no fundo, exposição de conteúdo do aplicativo da Starly na frente">
+
+            <h2>Sobre o que é a plataforma da Starly?</h2>
+            <p>No vídeo abaixo segue uma demonstração de nossas funcionalidades!</p>
+
+            <iframe class="youtube-frame" src="https://www.youtube.com/embed/XIMLoLxmTDw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+            <div class="section-3__bunddled-phones">
+                <img class="phone-mockup" id="front-phone" src="../assets/home/home_phone-3.webp" alt="">
+                <img class="phone-mockup" id="back-phone" src="../assets/home/home_phone-4.webp" alt="">
+            </div>
+
+            <div id="bubble-1">
+                Também lhe ajudamos com conteúdos sobre marketing e design!
+            </div>
+            
+        
+    
+        </section>
+
+        <section class="section-4">
+            <form class="section-4__newsletter-form" class="newsletter" action="">
+                <p class="newsletter-form__copy">Se inscreva para receber materiais e dicas sobre Marketing Digital em seu email!</p>
+                <input placeholder="Email" type="email" name="email" id="newsletter-input">
+                <button class="newsletter__form-btn">Inscrever-se</button>
+            </form>
+
+            <div class="contact-form">
+                <h3>Deixe nos uma mensagem</h3>
+                <form class="contact-form__form" action="">
+                    
+                    <input placeholder="Seu nome" class="contact-form__input" type="text" name="name" id="name">
+                    <input placeholder="Seu email"  class="contact-form__input" type="email" name="email" id="email">
+                    <input placeholder="Deixe sua mensagem"  class="contact-form__textfield" type="textfield" name="message" id="message">
+    
+                    <button class="contact-form__send-btn">Enviar</button>
+                </form>
+                <div class="social-network">
+                    <span>Contate-nos nas redes socias</span>
+
+                    <div class="social-network__links">
+                        <div class="link__circle"><i class="fab fa-linkedin"></i></div>
+                        <div class="link__circle"><i class="fab fa-facebook-f"></i></div>
+                        <div class="link__circle"><i class="fab fa-instagram"></i></div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+    <footer-component>
+      
+       
+    </footer-component>
+
+
+
+
+    <script type="text/javascript" src="../scripts/vanilla-tilt.js"></script>
+    <script type="text/javascript"
+        src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</body>

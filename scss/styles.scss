@@ -1,0 +1,231 @@
+@import "page-styles/home";
+@import "include-media";
+
+
+@font-face {
+  font-family: "Starly Font";
+  src: url(../assets/branding/earthorbiter.ttf);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+header-component {
+  display: flex;
+  justify-content: space-between;
+  height: 75px;
+  padding-bottom: 10px;
+  align-items: center;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    font-family: "Starly Font";
+    font-size: 34px;
+    text-decoration: none;
+    font-weight: 900;
+    column-gap: 25px;
+    margin-left: 15px;
+  }
+
+  img {
+    width: 60px;
+  }
+
+  .page-indicator {
+    font-size: 34px;
+    font-family: "Starly Font";
+    font-weight: 900;
+  }
+
+  ul {
+    display: flex;
+    margin-right: 15px;
+    column-gap: 15px;
+    font-size: 24px;
+  }
+
+  .menu-icon{
+    display: none;
+  }
+
+
+ 
+
+  li {
+    border-bottom: 1px solid rgba(196, 196, 196, 0.1);
+    padding-bottom: 1px;
+  }
+  li:hover {
+    border-bottom: 1px solid hsl(195, 77%, 45%);
+    padding-bottom: 1px;
+  }
+  a:hover {
+    color: hsl(195, 77%, 45%);
+  }
+
+  @include media("<tablet") {
+    width: 100%;
+    height: 150px;
+    display: block;
+
+    .menu-icon{
+      display: block;
+  
+    }
+
+    .logo{
+      margin-left: 25%;
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+
+    .page-indicator{
+      display:inline-block;
+      font-size: 22px;
+      margin-left: 24px;
+      margin-top: 4px;
+    }
+
+
+    nav{
+      float: right;
+      margin-right: 24px;
+    }
+   
+
+    li:not(:last-child){
+      display: none;
+    }
+
+  }
+}
+
+.btn {
+    border-radius: 10px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    color: white;
+    transition: 1s;
+    border: none;
+    outline: 0;
+
+}
+
+.btn:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+  transform: translateY(10px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  outline: none;
+  
+}
+
+footer-component{
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  padding: 14vh 10vw 0 10vw;
+  column-gap: 7vw;
+
+  li{
+    margin-top: 2vh;
+  }
+
+  img{
+    width: 6vw;
+  }
+
+  .footer__trademark{
+    position: absolute;
+    align-self: center;
+    margin-top: 15vh;
+    margin: 25vh 0 0 20vw;
+  }
+
+  #email_link{
+    color: purple;
+    text-decoration: underline;
+  }
+
+  .footer__back-to-top{
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    margin-right: 50px;
+
+    a{
+      color: black;
+    }
+
+
+    
+  }
+
+
+  @include media("<tablet"){
+
+    padding: 100px 50px 0 20px;
+    
+
+    img{
+      display: none;
+    }
+
+    .footer__back-to-top{
+      margin-top: -60px;
+    }
+  
+    .footer__trademark{
+      width: 90vw;
+      margin: 0 0 0 5%;
+      margin-top: 70%;
+      font-size: 10px;
+      
+    }
+  
+  }
+
+ 
+  
+}
